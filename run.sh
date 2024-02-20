@@ -1,0 +1,1 @@
+$SPARK_HOME/bin/spark-submit --master local[*]  --py-files packages.zip --files configs/etl_config.json  --jars /Users/satv/Downloads/terajdbc/terajdbc4.jar,/Users/satv/Downloads/terajdbc/tdgssconfig.jar  jobs/etl_job.py
