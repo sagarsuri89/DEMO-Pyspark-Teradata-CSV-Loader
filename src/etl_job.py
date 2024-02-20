@@ -57,7 +57,7 @@ def main():
     output_dir='result'
     username=config['username']
     password=config['password']
-    sql="select * from sandbox.bia_usr_merc_ugc_intl sample 10"
+    sql="select * from sandbox.demo_pyspark_td_csv_loader sample 10"
 
     # execute ETL pipeline
     data = td_load_data(spark,username,password,sql)
